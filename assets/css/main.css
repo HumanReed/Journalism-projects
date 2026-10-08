@@ -4745,3 +4745,11 @@ input, select, textarea {
 .headline-stage {
     background-image: url("../../images/eduskuntatalo-illalla.jpg") !important;
 }
+/* Article-specific layout */
+body:has(.headline-intro) #wrapper {
+    padding-top: 0;
+}
+
+body:has(.headline-intro) #main {
+    margin-top: 0;
+}
