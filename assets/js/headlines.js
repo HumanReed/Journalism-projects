@@ -11,16 +11,8 @@ const timeline = gsap.timeline({
   }
 });
 
-timeline
-  .to(".headline-1", {
+timeline.to(".headline-image", {
     opacity: 1,
-    duration: 1
-  })
-  .to(".headline-2", {
-    opacity: 1,
-    duration: 1
-  })
-  .to(".headline-3", {
-    opacity: 1,
-    duration: 1
-  });
+    duration: 1,
+    stagger: 1
+});
