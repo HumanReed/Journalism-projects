@@ -4691,3 +4691,50 @@ input, select, textarea {
     max-width: 100%;
     height: auto;
 }
+
+.headline-intro {
+  height: 100vh;
+  position: relative;
+}
+
+.headline-stage {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("../../images/eduskuntatalo-illalla.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.headline-image {
+  position: absolute;
+  width: 35%;
+  height: auto;
+  opacity: 0;
+  z-index: 2;
+  display: block;
+}
+
+.headline-1 {
+  top: 12%;
+  left: 8%;
+}
+
+.headline-2 {
+  top: 35%;
+  right: 8%;
+}
+
+.headline-3 {
+  bottom: 12%;
+  left: 25%;
+}
+
+@media (max-width: 736px) {
+  .headline-image {
+    width: 70%;
+  }
+}
+
