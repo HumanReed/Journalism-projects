@@ -4731,6 +4731,31 @@ input, select, textarea {
   bottom: 12%;
   left: 25%;
 }
+.headline-4 {
+    top: 20%;
+    left: 40%;
+    width: 25%;
+}
+.headline-5 {
+    top: 65%;
+    right: 5%;
+    width: 28%;
+}
+.headline-6 {
+    top: 5%;
+    left: 38%;
+    width: 24%;
+}
+.headline-7 {
+    bottom: 5%;
+    left: 5%;
+    width: 30%;
+}
+.headline-8 {
+    top: 42%;
+    left: 35%;
+    width: 32%;
+}
 
 @media (max-width: 736px) {
   .headline-image {
