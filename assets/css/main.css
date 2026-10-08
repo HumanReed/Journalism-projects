@@ -4737,4 +4737,11 @@ input, select, textarea {
     width: 70%;
   }
 }
+.headline-intro {
+    position: relative;
+    z-index: 10;
+}
 
+.headline-stage {
+    background-image: url("../../images/eduskuntatalo-illalla.jpg") !important;
+}
