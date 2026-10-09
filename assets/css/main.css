@@ -4848,10 +4848,6 @@ body:has(.headline-intro) #main {
 
     width: 85%;
     max-width: 1000px;
-	
-	background: rgba(0, 0, 0, 0.72);
-	padding: 2.5rem 3rem;
-	border-radius: 4px;
 
     text-align: center;
     z-index: 40;
