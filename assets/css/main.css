@@ -4942,10 +4942,11 @@ body:has(.headline-intro) .article-opening {
     z-index: 10;
 
     background: linear-gradient(
-        to bottom,
-        #11151d 0%,
-        #303a48 35%,
-        #8996a5 70%,
-        #f0f1f3 100%
-    ) !important;
+    to bottom,
+    #0b0d13 0%,
+    #11151d 20%,
+    #303a48 50%,
+    #8996a5 80%,
+    #f0f1f3 100%
+	) !important;
 }
