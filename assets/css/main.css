@@ -5030,3 +5030,6 @@ body:has(.headline-intro) .bg.fixed {
         margin-bottom: 1.5rem;
     }
 }
+body:has(.headline-intro) #main > .post {
+    padding-top: 2rem;
+}
