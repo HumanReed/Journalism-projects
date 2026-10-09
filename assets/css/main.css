@@ -4932,3 +4932,7 @@ body:has(.headline-intro) #main {
     height: 65vh;
     background: red !important;
 }
+body:has(.headline-intro) {
+    background: #11151d !important;
+    background-image: none !important;
+}
