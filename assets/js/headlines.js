@@ -79,3 +79,26 @@ timeline.to(".story-title", {
 
 // Keep title visible before scrolling onward
 timeline.to({}, { duration: 2 });
+
+
+/* Reveal the three questions one by one */
+
+gsap.fromTo(
+    ".opening-text p",
+    {
+        autoAlpha: 0,
+        y: 30
+    },
+    {
+        autoAlpha: 1,
+        y: 0,
+        stagger: 0.5,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".article-opening",
+            start: "top 80%",
+            end: "bottom 45%",
+            scrub: 1
+        }
+    }
+);
