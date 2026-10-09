@@ -4915,3 +4915,13 @@ body:has(.headline-intro) #main {
     z-index: 20;
     pointer-events: none;
 }
+.article-opening {
+    height: 65vh;
+    background: linear-gradient(
+        to bottom,
+        #11151d 0%,
+        #303a48 35%,
+        #8996a5 70%,
+        #f0f1f3 100%
+    );
+}
