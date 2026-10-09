@@ -4950,3 +4950,10 @@ body:has(.headline-intro) .article-opening {
     #f0f1f3 100%
 	) !important;
 }
+body:has(.headline-intro) #wrapper {
+    background: #f0f1f3 !important;
+}
+
+body:has(.headline-intro) #main {
+    background: #f0f1f3 !important;
+}
