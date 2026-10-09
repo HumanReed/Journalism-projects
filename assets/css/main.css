@@ -4808,3 +4808,75 @@ body:has(.headline-intro) #wrapper {
 body:has(.headline-intro) #main {
     margin-top: 0;
 }
+
+/* Narrative text boxes */
+
+.story-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 75%;
+    max-width: 760px;
+    padding: 2rem 2.5rem;
+
+    background: rgba(15, 20, 30, 0.88);
+    color: white;
+
+    text-align: center;
+    z-index: 30;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.story-text p {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Final title */
+
+.story-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 85%;
+    max-width: 1000px;
+
+    text-align: center;
+    z-index: 40;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.story-title h1 {
+    color: white;
+    font-size: clamp(2rem, 4vw, 4rem);
+    line-height: 1.2;
+    text-shadow: 0 3px 15px rgba(0,0,0,0.8);
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 736px) {
+    .story-text {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .story-text p {
+        font-size: 1.15rem;
+    }
+
+    .story-title {
+        width: 92%;
+    }
+}
+
