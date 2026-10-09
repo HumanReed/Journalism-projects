@@ -4905,3 +4905,9 @@ body:has(.headline-intro) #main {
     );
 }
 
+/* Light grey article background */
+
+body:has(.headline-intro) #main {
+    background-color: #f0f1f3;
+}
+
