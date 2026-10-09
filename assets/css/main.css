@@ -4928,3 +4928,7 @@ body:has(.headline-intro) #main {
 body:has(.headline-intro) #main {
     background: #f0f1f3 !important;
 }
+.article-opening {
+    height: 65vh;
+    background: red !important;
+}
