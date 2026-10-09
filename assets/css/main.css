@@ -4957,3 +4957,17 @@ body:has(.headline-intro) #wrapper {
 body:has(.headline-intro) #main {
     background: #f0f1f3 !important;
 }
+/* Full-width background for this article page */
+
+body:has(.headline-intro) {
+    background: #f0f1f3 !important;
+    background-image: none !important;
+}
+
+body:has(.headline-intro) #wrapper {
+    background: transparent !important;
+}
+
+body:has(.headline-intro) #main {
+    background: #f0f1f3 !important;
+}
