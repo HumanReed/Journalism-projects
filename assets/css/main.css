@@ -4971,3 +4971,7 @@ body:has(.headline-intro) #wrapper {
 body:has(.headline-intro) #main {
     background: #f0f1f3 !important;
 }
+/* Hide Massively's generated background on this page */
+body:has(.headline-intro) .bg.fixed {
+    display: none !important;
+}
