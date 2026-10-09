@@ -66,6 +66,11 @@ timeline.to(".headline-image", {
     duration: 1.5
 });
 
+timeline.to(".headline-stage", {
+    "--title-overlay-opacity": 1,
+    duration: 1.5
+});
+
 // 8. Final title appears
 timeline.to(".story-title", {
     autoAlpha: 1,
