@@ -4756,6 +4756,36 @@ input, select, textarea {
     left: 35%;
     width: 32%;
 }
+.headline-9 {
+    top: 8%;
+    right: 3%;
+    width: 29%;
+}
+.headline-10 {
+    top: 55%;
+    left: 12%;
+    width: 33%;
+}
+.headline-11 {
+    top: 28%;
+    left: 18%;
+    width: 27%;
+}
+.headline-12 {
+    bottom: 3%;
+    right: 18%;
+    width: 31%;
+}
+.headline-13 {
+    top: 15%;
+    left: 55%;
+    width: 34%;
+}
+.headline-14 {
+    top: 48%;
+    right: 12%;
+    width: 38%;
+}
 
 @media (max-width: 736px) {
   .headline-image {
