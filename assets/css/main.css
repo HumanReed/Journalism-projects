@@ -4888,3 +4888,20 @@ body:has(.headline-intro) #main {
     pointer-events: none;
     z-index: 35;
 }
+
+/* Transition from the dark introduction to the article */
+
+.article-transition {
+    height: 55vh;
+    position: relative;
+    z-index: 10;
+
+    background: linear-gradient(
+        to bottom,
+        #11151d 0%,
+        #303a48 30%,
+        #8996a5 65%,
+        #f0f1f3 100%
+    );
+}
+
