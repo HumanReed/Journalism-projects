@@ -4975,3 +4975,46 @@ body:has(.headline-intro) #main {
 body:has(.headline-intro) .bg.fixed {
     display: none !important;
 }
+
+/* Text over the gradient */
+
+.article-opening {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opening-text {
+    width: 85%;
+    max-width: 850px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    transform: translateY(-15%);
+}
+
+.opening-text p {
+    color: white;
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+.opening-text p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 736px) {
+    .opening-text {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .opening-text p {
+        font-size: 1.15rem;
+        margin-bottom: 1.5rem;
+    }
+}
