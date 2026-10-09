@@ -4984,27 +4984,39 @@ body:has(.headline-intro) .bg.fixed {
     justify-content: center;
 }
 
+
+/* Questions over the gradient */
+
 .opening-text {
-    width: 85%;
+    width: 90%;
     max-width: 850px;
-    padding: 2rem;
-    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 1rem;
     position: relative;
     z-index: 2;
-    transform: translateY(-15%);
+    text-align: center;
 }
 
 .opening-text p {
-    color: white;
-    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    color: #ffffff;
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
     font-weight: 500;
     line-height: 1.5;
-    margin-bottom: 2rem;
+    text-align: center;
+
+    margin: 0 0 4rem 0;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
 }
 
 .opening-text p:last-child {
     margin-bottom: 0;
+}
+
+@media (max-width: 736px) {
+    .opening-text p {
+        font-size: 1.2rem;
+        margin-bottom: 2.5rem;
+    }
 }
 
 @media (max-width: 736px) {
