@@ -4925,3 +4925,6 @@ body:has(.headline-intro) #main {
         #f0f1f3 100%
     );
 }
+body:has(.headline-intro) #main {
+    background: #f0f1f3 !important;
+}
