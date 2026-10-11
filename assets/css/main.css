@@ -5033,3 +5033,52 @@ body:has(.headline-intro) .bg.fixed {
 body:has(.headline-intro) #main > .post {
     padding-top: 2rem;
 }
+/* Party differences introduction */
+
+.party-intro {
+    max-width: 850px;
+    margin: 5rem auto 4rem;
+}
+
+.party-text-box {
+    background: #f4f4f4;
+    color: #222;
+    padding: 2rem 2.5rem;
+    margin-bottom: 5rem;
+    border-radius: 8px;
+    text-align: center;
+
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.8s ease,
+                transform 0.8s ease;
+}
+
+.party-text-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.party-text-box p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 736px) {
+    .party-text-box {
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .party-text-box p {
+        font-size: 1.15rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .party-text-box {
+        transition: none;
+        transform: none;
+    }
+}
