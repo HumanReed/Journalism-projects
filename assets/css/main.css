@@ -5196,3 +5196,74 @@ h2 {
         margin: 0 1rem;
     }
 }
+/* Closing photograph */
+
+.article-ending {
+    position: relative;
+    height: 100vh;
+    background-color: #17232d;
+    overflow: hidden;
+}
+
+.ending-image {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            to bottom,
+            #f2f3f4 0%,
+            rgba(242, 243, 244, 0) 45%,
+            rgba(23, 35, 45, 0.2) 70%,
+            #17232d 100%
+        ),
+        url("images/eduskuntatalo.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* Methodology section */
+
+.methodology-section {
+    background: #17232d;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 5rem 1.5rem 8rem;
+    box-sizing: border-box;
+}
+
+.methodology-box {
+    background: rgba(255, 255, 255, 0.96);
+    color: #222;
+
+    max-width: 800px;
+    width: 100%;
+    padding: 3rem;
+
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.methodology-box h2 {
+    color: #222;
+    margin-top: 0;
+}
+
+.methodology-box p {
+    color: #222;
+}
+
+@media (max-width: 736px) {
+    .methodology-box {
+        padding: 1.5rem;
+    }
+
+    .article-ending {
+        height: 85vh;
+    }
+}
