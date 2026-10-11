@@ -5142,3 +5142,8 @@ h2 {
     font-size: 1.7rem;
     line-height: 1.5;
 }
+.party-heatmap-background {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
