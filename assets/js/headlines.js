@@ -159,7 +159,7 @@ gsap.to(".keyword-question", {
     scrollTrigger: {
         trigger: ".keywords-section",
         start: "top 85%",
-        end: "top 50%",
+        end: "top 20%",
         scrub: true
     }
 });
