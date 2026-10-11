@@ -139,31 +139,27 @@ partyTimeline.fromTo(
 partyTimeline.to({}, {
     duration: 4
 });
-/* Transition from heatmap to keyword visualisation */
-
-const keywordTimeline = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".keyword-transition",
-        start: "top top",
-        end: "+=1200",
-        scrub: 1,
-        pin: true
+gsap.fromTo(".keyword-question",
+    { autoAlpha: 0 },
+    {
+        autoAlpha: 1,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".keyword-transition",
+            start: "top 85%",
+            end: "top 45%",
+            scrub: true
+        }
     }
-});
+);
 
-/* Fade in the question */
-keywordTimeline.to(".keyword-question", {
-    autoAlpha: 1,
-    duration: 1
-});
-
-/* Keep the question visible */
-keywordTimeline.to({}, {
-    duration: 3
-});
-
-/* Fade out the question */
-keywordTimeline.to(".keyword-question", {
+gsap.to(".keyword-question", {
     autoAlpha: 0,
-    duration: 1
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".keywords-section",
+        start: "top 85%",
+        end: "top 50%",
+        scrub: true
+    }
 });
