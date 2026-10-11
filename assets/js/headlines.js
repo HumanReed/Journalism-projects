@@ -128,6 +128,10 @@ gsap.utils.toArray(".party-overlay-text").forEach((text) => {
         autoAlpha: 0,
         duration: 1
     });
-
+    
 });
-
+partyTimeline.fromTo(
+    ".party-heatmap-background",
+    { opacity: 0.35 },
+    { opacity: 1, duration: 1.5 }
+);
