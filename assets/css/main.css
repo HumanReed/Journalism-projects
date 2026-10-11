@@ -5228,6 +5228,20 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
 }
+.ending-gradient {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        #f2f3f4 0%,
+        rgba(242, 243, 244, 0.85) 25%,
+        rgba(242, 243, 244, 0) 75%
+    );
+
+    opacity: 1;
+    pointer-events: none;
+}
 
 
 /* Methodology section */
