@@ -4688,8 +4688,11 @@ input, select, textarea {
 
 	}
 .parliament-viz {
-    max-width: 100%;
+    width: 90%;
+    max-width: 1100px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .headline-intro {
