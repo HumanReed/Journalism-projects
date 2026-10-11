@@ -5210,13 +5210,6 @@ h2 {
     inset: 0;
 
     background-image:
-        linear-gradient(
-            to bottom,
-            #f2f3f4 0%,
-            rgba(242, 243, 244, 0) 45%,
-            rgba(23, 35, 45, 0.2) 70%,
-            #17232d 100%
-        ),
         url("images/eduskuntatalo-illalla.jpg");
 
     background-size: cover;
