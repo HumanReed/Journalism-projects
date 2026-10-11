@@ -5161,14 +5161,8 @@ h2 {
 /* Transition to keyword visualisation */
 
 .keyword-transition {
-    position: relative;
-    height: 180vh;
-}
-
-.keyword-sticky {
-    position: sticky;
-    top: 0;
     height: 100vh;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
