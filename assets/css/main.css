@@ -5143,22 +5143,13 @@ h2 {
     line-height: 1.5;
 }
 
-/* Heatmap container */
 .party-heatmap-background {
     width: 95%;
     max-width: 1200px;
-    height: 80vh;
     margin: 0 auto;
 }
 
-/* Flourish embed */
 .party-heatmap-background .flourish-embed {
     width: 100%;
-    height: 100%;
-}
-
-/* Flourish iframe */
-.party-heatmap-background iframe {
-    width: 100%;
-    height: 100% !important;
+    max-width: 100%;
 }
