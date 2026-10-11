@@ -5200,9 +5200,25 @@ h2 {
 
 .article-ending {
     position: relative;
+
+    width: 100vw;
     height: 100vh;
+
+    margin-left: calc(50% - 50vw);
+
     background-color: #17232d;
     overflow: hidden;
+}
+
+.ending-image {
+    position: absolute;
+    inset: 0;
+
+    background-image: url("../../images/eduskuntatalo-illalla.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .ending-image {
