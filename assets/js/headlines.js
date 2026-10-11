@@ -102,28 +102,25 @@ gsap.fromTo(
         }
     }
 );
-<script>
-document.addEventListener("DOMContentLoaded", function () {
+/* Reveal the three party questions one by one */
 
-    const boxes = document.querySelectorAll(".reveal");
-
-    if (!("IntersectionObserver" in window)) {
-        boxes.forEach(box => box.classList.add("visible"));
-        return;
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                observer.unobserve(entry.target);
+gsap.utils.toArray(".party-text-box").forEach((box) => {
+    gsap.fromTo(
+        box,
+        {
+            autoAlpha: 0,
+            y: 40
+        },
+        {
+            autoAlpha: 1,
+            y: 0,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: box,
+                start: "top 85%",
+                toggleActions: "play none none none"
             }
-        });
-    }, {
-        threshold: 0.3
-    });
-
-    boxes.forEach(box => observer.observe(box));
-
+        }
+    );
 });
-</script>
