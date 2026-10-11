@@ -102,25 +102,32 @@ gsap.fromTo(
         }
     }
 );
-/* Reveal the three party questions one by one */
-
-gsap.utils.toArray(".party-text-box").forEach((box) => {
-    gsap.fromTo(
-        box,
-        {
-            autoAlpha: 0,
-            y: 40
-        },
-        {
-            autoAlpha: 1,
-            y: 0,
-            duration: 1,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: box,
-                start: "top 85%",
-                toggleActions: "play none none none"
-            }
-        }
-    );
+const partyTimeline = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".party-heatmap-section",
+        start: "top top",
+        end: "+=2500",
+        scrub: 1,
+        pin: true
+    }
 });
+
+/* three text boxes */
+gsap.utils.toArray(".party-overlay-text").forEach((text) => {
+
+    partyTimeline.to(text, {
+        autoAlpha: 1,
+        duration: 1
+    });
+
+    partyTimeline.to({}, {
+        duration: 1.5
+    });
+
+    partyTimeline.to(text, {
+        autoAlpha: 0,
+        duration: 1
+    });
+
+});
+
