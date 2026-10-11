@@ -5126,3 +5126,19 @@ h1, h2, h3, h4, h5, h6 {
 .party-overlay-text {
     font-family: 'Source Serif 4', Georgia, serif;
 }
+/* Main article text */
+p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+/* Section headings */
+h2 {
+    font-size: 2rem;
+}
+
+/* Animated text boxes */
+.party-overlay-text {
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
