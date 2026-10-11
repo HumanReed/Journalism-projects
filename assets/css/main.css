@@ -5196,6 +5196,7 @@ h2 {
         margin: 0 1rem;
     }
 }
+
 /* Closing photograph */
 
 .article-ending {
@@ -5210,10 +5211,10 @@ h2 {
 
     margin: 0;
     padding: 0;
-
     max-width: none;
-    background-color: #17232d;
+
     overflow: hidden;
+    background: #0b0d13;
 }
 
 .ending-image {
@@ -5234,12 +5235,14 @@ h2 {
 
     background: linear-gradient(
         to bottom,
-        #f2f3f4 0%,
-        rgba(242, 243, 244, 0.85) 25%,
-        rgba(242, 243, 244, 0) 75%
+        #f0f1f3 0%,
+        #8996a5 20%,
+        #303a48 50%,
+        #11151d 80%,
+        #0b0d13 100%
     );
 
-    opacity: 1;
+    opacity: 0.85;
     pointer-events: none;
 }
 
@@ -5247,7 +5250,7 @@ h2 {
 /* Methodology section */
 
 .methodology-section {
-    background: #17232d;
+    background: #0b0d13;
     min-height: 100vh;
 
     display: flex;
