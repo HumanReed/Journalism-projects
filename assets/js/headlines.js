@@ -135,3 +135,7 @@ partyTimeline.fromTo(
     { opacity: 0.35 },
     { opacity: 1, duration: 1.5 }
 );
+/* Keep the heatmap visible before scrolling onward */
+partyTimeline.to({}, {
+    duration: 4
+});
