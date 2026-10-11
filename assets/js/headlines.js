@@ -102,3 +102,28 @@ gsap.fromTo(
         }
     }
 );
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const boxes = document.querySelectorAll(".reveal");
+
+    if (!("IntersectionObserver" in window)) {
+        boxes.forEach(box => box.classList.add("visible"));
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    boxes.forEach(box => observer.observe(box));
+
+});
+</script>
