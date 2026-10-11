@@ -5112,12 +5112,17 @@ body:has(.headline-intro) #main > .post {
     visibility: hidden;
     opacity: 0;
 }
-body {
-    font-family: 'Georgia', serif;
+/* Article paragraphs */
+body, p {
+    font-family: 'Source Serif 4', Georgia, serif;
 }
-body,
-h1, h2, h3, h4, h5, h6,
-p,
+
+/* Headlines */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+/* Animated text boxes */
 .party-overlay-text {
-    font-family: 'Georgia', serif;
+    font-family: 'Source Serif 4', Georgia, serif;
 }
