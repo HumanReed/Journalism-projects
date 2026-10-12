@@ -5253,11 +5253,13 @@ h2 {
 }
 
 /* Methodology section body text */
-.methodology-box p {
+.methodology-box p,
+.methodology-box li {
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
+
 /* Reduce spacing below nested lists */
 ol ul {
     margin-bottom: 0;
