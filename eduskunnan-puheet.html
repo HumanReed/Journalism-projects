@@ -206,16 +206,31 @@
 					<!-- Data and methodology -->
 					<section class="methodology-section">
 					    <div class="methodology-box">
-					        <h2>Aineisto ja menetelmät</h2>
+					        <h2>Aineistosta ja analyysistä</h2>
 					
 					        <p>
-					            Kirjoita tähän aineiston ja analyysin kuvaus.
+					            Jutussa esitetyt visualisoinnit pohjautuvat eduskunnassa aikavälillä 20.6.2023-10.6.2026 pidettyihin puheenvuoroihin, joita on analysoitu tietokoneavusteisesti Python-ohjelmilla.
+								<br>Puheenvuoroja oli yhteensä 36 215.
+								<br>Luokittelu teemoihin perustuu Comparative Agendas Projectiin (CAP). CAP on politiikan tutkijoiden kehittämä tapa luokitella politiikan eri osa-alueet johdonmukaisesti teemoihin.
+								<br>Puheet on luokiteltu teemoihin seuraavasti:
+									<ol>
+										<li>Koottiin eri puolueiden kevään 2023 vaaliohjelmista politiikan teemoihin liittyviä avainsanoja.</li>
+										<li>Kaikki puheet lemmatisoitiin eli niiden sanat muutettiin niiden perusmuotoihin käyttämällä spaCy-kirjastoa.</li>
+										<li>Lemmoista valittiin potentiaalisiksi avainsanoiksi ne substantiivit, jotka esiintyivät puheissa vähintään 50 kertaa.</li>
+										<li>Mahdollisia avainsanoja poimittiin myös manuaalisesti puolueiden vaaliohjelmista</li>
+										<li>Käytiin läpi potentiaaliset avainsanat. Jokaisen kohdalla pohdittiin seuraavia kysymyksiä:</li>
+											<ul>
+												<li>Onko avainsana riittävän spesifi, jotta sen voi luokitella yhteen CAP-teemoista.</li>
+												<li>Mihin CAP-teemaan se liittyy?</li>
+											</ul>
+										<li>Kun mahdolliset avainsanat oli käyty läpi, lopulliseen sanakirjaan eri teemoista päätyi yhteensä 1288 avainsanaa.</li>
+										<li> Puheiden lemmoja verrattiin teema-avainsana-sanakirjan lemmoihin. Sanakirjan avulla puheenvuorot luokiteltiin 0–3 eri teemaan.</li>
+									</ol>
+							<br> Valtaosa puheista (70,3 %) luokiteltiin yhteen teemaan. Noin 2 200 puheessa (6,2 %) ei esiintynyt yhtäkään sanakirjan avainsanaa.
 					        </p>
 					
 					        <p>
-					            Voit esimerkiksi kertoa, mistä puheenvuorot
-					            kerättiin, miten ne luokiteltiin ja mitä
-					            analyysin tulkinnassa tulee huomioida.
+					            En ole varma, miten tämä toimii.
 					        </p>
 					    </div>
 					</section>
