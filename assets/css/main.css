@@ -5258,3 +5258,7 @@ h2 {
     line-height: 1.6;
     margin-bottom: 1rem;
 }
+/* Reduce spacing below nested lists */
+ol ul {
+    margin-bottom: 0;
+}
