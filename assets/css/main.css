@@ -5264,3 +5264,9 @@ h2 {
 ol ul {
     margin-bottom: 0;
 }
+.article-credits {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
