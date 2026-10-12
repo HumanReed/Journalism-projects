@@ -5244,3 +5244,17 @@ h2 {
         height: 85vh;
     }
 }
+/* Methodology section heading */
+.methodology-box h2 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+}
+
+/* Methodology section body text */
+.methodology-box p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
