@@ -5200,39 +5200,41 @@ h2 {
 
 /* Methodology section */
 
+
 .methodology-section {
-    background: #0b0d13;
-    min-height: 100vh;
+    background: #f0f1f3;
 
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    width: 100%;
+    max-width: none;
 
-    padding: 5rem 1.5rem 8rem;
+    margin: 0;
+    padding: 4rem 1.5rem 6rem;
+
     box-sizing: border-box;
 }
 
 .methodology-box {
-    background: rgba(255, 255, 255, 0.96);
+    background: transparent;
     color: #222;
 
-    max-width: 800px;
     width: 100%;
-    padding: 3rem;
+    max-width: 800px;
 
-    border-radius: 8px;
+    margin: 0 auto;
+    padding: 0;
+
     box-sizing: border-box;
 }
 
 .methodology-box h2 {
     color: #222;
-    margin-top: 0;
+    margin-bottom: 2rem;
 }
 
 .methodology-box p {
     color: #222;
+    line-height: 1.7;
 }
-
 @media (max-width: 736px) {
     .methodology-box {
         padding: 1.5rem;
