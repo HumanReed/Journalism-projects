@@ -59,34 +59,33 @@
             <a href="./Helsinki-asunnot-2010-2024.png">Avaa kartta</a>
           </div>
           
-          <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
           <script>
-            const svgUrl = "./Helsinki-asunnot-2010-2024.png";
+          (() => {
+            const container = document.getElementById("helsinki-map");
+            const imageUrl = "./Helsinki-asunnot-2010-2024.png";
             const image = new Image();
           
             image.onload = () => {
-              const container = document.getElementById("helsinki-map");
-              container.replaceChildren();
-          
               const bounds = [[0, 0], [image.naturalHeight, image.naturalWidth]];
               const map = L.map(container, {
                 crs: L.CRS.Simple,
                 scrollWheelZoom: false,
-                zoomSnap: 0
+                zoomSnap: 0,
                 minZoom: -10
               });
           
-              L.imageOverlay(svgUrl, bounds, {
-                alt: "Helsingin asuntokartta 200 × 200 metrin ruuduissa"
-              }).addTo(map);
-          
+              L.imageOverlay(imageUrl, bounds).addTo(map);
               map.fitBounds(bounds);
+          
               const overviewZoom = map.getZoom();
               map.setMinZoom(overviewZoom - 1);
               map.setMaxZoom(overviewZoom + 3);
+          
+              container.querySelector("a:not(.leaflet-control a)")?.remove();
             };
           
-            image.src = svgUrl;
+            image.src = imageUrl;
+          })();
           </script>
         </section>
 
