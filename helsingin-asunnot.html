@@ -53,14 +53,39 @@
 
         <section class="chart" aria-labelledby="kehitys">
           <h2 id="kehitys">Vuodesta 2010 lähtien valmistuneiden asuntojen tarkemmat sijainnit</h2>
-          <figure>
-            <iframe
-              src="KORVAA_TOISEN_KUVION_UPOTUSOSOITTEELLA"
-              title="Kuvio näyttää 200 x 200 metrin kokoisten ruutujen tarkkuudella, minne asunnot ovat valmistuneet"
-              loading="lazy">
-            </iframe>
-            <figcaption>Lähde: [aineiston nimi]</figcaption>
-          </figure>
+          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+          <div id="helsinki-map" style="width: 100%; height: clamp(320px, 65vw, 600px); background: white;">
+            <a href="./helsinki-map.svg">Avaa kartta</a>
+          </div>
+          
+          <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+          <script>
+            const svgUrl = "./Helsinki-asunnot-2010-2024.svg";
+            const image = new Image();
+          
+            image.onload = () => {
+              const container = document.getElementById("helsinki-map");
+              container.replaceChildren();
+          
+              const bounds = [[0, 0], [image.naturalHeight, image.naturalWidth]];
+              const map = L.map(container, {
+                crs: L.CRS.Simple,
+                scrollWheelZoom: false,
+                zoomSnap: 0
+              });
+          
+              L.imageOverlay(svgUrl, bounds, {
+                alt: "Helsingin asuntokartta 200 × 200 metrin ruuduissa"
+              }).addTo(map);
+          
+              map.fitBounds(bounds);
+              map.setMinZoom(map.getZoom());
+              map.setMaxZoom(map.getZoom() + 3);
+            };
+          
+            image.src = svgUrl;
+          </script>
         </section>
 
         <section aria-labelledby="aineisto">
