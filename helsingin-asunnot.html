@@ -73,6 +73,7 @@
                 crs: L.CRS.Simple,
                 scrollWheelZoom: false,
                 zoomSnap: 0
+                minZoom: -10
               });
           
               L.imageOverlay(svgUrl, bounds, {
@@ -80,8 +81,9 @@
               }).addTo(map);
           
               map.fitBounds(bounds);
-              map.setMinZoom(map.getZoom());
-              map.setMaxZoom(map.getZoom() + 3);
+              const overviewZoom = map.getZoom();
+              map.setMinZoom(overviewZoom - 1);
+              map.setMaxZoom(overviewZoom + 3);
             };
           
             image.src = svgUrl;
